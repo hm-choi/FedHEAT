@@ -1,0 +1,8 @@
+wandb
+*/__pycache__/
+*.pyc
+checkpoints/**
+*/.ipynb_checkpoints/
+__pycache__/
+
+./data/cifar-100-python.tar.gz
