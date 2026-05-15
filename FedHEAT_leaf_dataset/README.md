@@ -127,4 +127,5 @@ CUDA_VISIBLE_DEVICES=0 python3 \
 | $\eta_l$       | 0.1     | 0.1     |
 | Batch size     | 20      | 20      |
 
+## Reference
 [5] Sebastian Caldas, Sai Meher Karthik Duddu, Peter Wu, Tian Li, Jakub Koneˇcn `y, H. Brendan McMahan, Virginia Smith, and Ameet Talwalkar. LEAF: A Benchmark for Federated Settings. arXiv preprint arXiv:1812.01097, 2018.
