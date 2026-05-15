@@ -42,8 +42,7 @@ Detailed explanations and how to run the code are provided in the README.md file
 We compare the server-side aggregation time (in seconds) of FedHEAT, FedHEAT without MR (Moment Reparameterization, our proposed method), and HE-Adam [2] across five benchmark datasets.
 For a fair comparison across datasets, we measure the aggregation time over 500 rounds for each dataset.
 
-### Table. Server-side aggregation runtime (seconds) across five benchmarks. All values are measured on Server1. Lower is better.
-
+### Table. Server-side aggregation runtime (seconds) under different choices of the stabilization parameter τ across five benchmarks. The experiments for this table were conducted on Server1.
 | Setting    | Method             | FEMNIST  | CelebA | CIFAR-10 | CIFAR-100 | Tiny-ImageNet |
 |-------------|--------------------|----------|---------|-----------|-------------|----------------|
 | Ciphertext | HE-Adam            | 14020.47 | 96.99   | 23114.19  | 23372.54    | 23481.53       |
@@ -51,7 +50,7 @@ For a fair comparison across datasets, we measure the aggregation time over 500 
 | Ciphertext | **FedHEAT**        | 9171.14  | 73.78   | 14992.82  | 14898.50    | 15055.01       |
 
 We compare the teste accuracy of FedHEAT with FedAdam[4] in the plaintext setting, and FedHEAT with its variant and HE-Adam in the ciphertext setting.
-### Table. Accuracy (%) of FedHEAT variants and HE-Adam across benchmark datasets. Higher is better.
+### Table. Accuracy (%) of FedHEAT variants and HE-Adam across benchmark datasets. The experiments for this table were conducted on Server1 and Server2. Server1 was used for all ciphertext-setting experiments except CIFAR-100, while Server2 was used for the plaintext-setting experiments and the ciphertext-setting experiment on CIFAR-100.
 
 | Setting    | Method             | FEMNIST | CelebA | CIFAR-10 | CIFAR-100 | Tiny-ImageNet |
 |-------------|--------------------|----------|---------|-----------|-------------|----------------|
