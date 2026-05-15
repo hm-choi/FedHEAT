@@ -30,8 +30,8 @@ To select a dataset, set the `dataset` argument to one of the following:
 - `femnist`
 - `celeba`
 
-For example, the following command runs the evaluation on FEMNIST: \
-**FEMNIST, FedHEAT in encrypted version:**
+For example, the following command runs the evaluation on FEMNIST: \\
+1. FEMNIST, FedHEAT in encrypted version
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
     federated_train.py \
@@ -60,7 +60,7 @@ CUDA_VISIBLE_DEVICES=0 python3 \
     wandb=True
 ~~~
 
-**FEMNIST, FedHEAT w/o MR in encrypted version:**
+2. FEMNIST, FedHEAT w/o MR in encrypted version
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
     federated_train.py \
@@ -87,7 +87,7 @@ CUDA_VISIBLE_DEVICES=0 python3 \
     wandb=True
 ~~~
 
-**FEMNIST, HE-Adam in encrypted version:**
+3. FEMNIST, HE-Adam in encrypted version
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
     federated_train.py \

@@ -20,8 +20,8 @@ To select a dataset, set the `dataset` argument to one of the following:
 - `cifar100`
 - `tinyimagenet`
 
-For example, the following command runs the evaluation on CIFAR-100: \
-**CIFAR-100, FedHEAT in encrypted version:**
+For example, the following command runs the evaluation on CIFAR-100: \\
+1. CIFAR-100, FedHEAT in encrypted version
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
 	federated_train.py \
@@ -49,7 +49,7 @@ CUDA_VISIBLE_DEVICES=0 python3 \
 	wandb=True
 ~~~
 
-**CIFAR-100, FedHEAT w/o MR in encrypted version:**
+2. CIFAR-100, FedHEAT w/o MR in encrypted version
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
 	federated_train.py \
@@ -75,7 +75,7 @@ CUDA_VISIBLE_DEVICES=0 python3 \
 	wandb=True
 ~~~
 
-**CIFAR-100, HE-Adam in encrypted version:**
+3. CIFAR-100, HE-Adam in encrypted version
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
 	federated_train.py \
