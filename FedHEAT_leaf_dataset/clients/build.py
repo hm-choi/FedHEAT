@@ -1,0 +1,20 @@
+from utils.registry import Registry
+
+CLIENT_REGISTRY = Registry("CLIENT")
+CLIENT_REGISTRY.__doc__ = """
+Registry for local updater
+"""
+
+__all__ = ['get_client_type']
+
+
+def get_client_type(args):
+    if args.verbose:
+        print(CLIENT_REGISTRY)
+    print("=> Getting client type '{}'".format(args.client.type))
+    client_type = CLIENT_REGISTRY.get(args.client.type)
+    return client_type
+
+
+def build_client(args):
+    return

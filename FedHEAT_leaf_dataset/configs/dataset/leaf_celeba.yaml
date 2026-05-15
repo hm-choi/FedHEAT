@@ -1,0 +1,6 @@
+### dataset ###
+name: 'LEAF_CELEBA'
+path: './data/leaf_celeba'
+client_path: "./client_data"
+num_instances: 0
+download: False

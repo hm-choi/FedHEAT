@@ -1,0 +1,13 @@
+## Server ##
+type: ServerAdam_PPRL
+momentum: 0.9
+beta: 0.99
+tau : 0.00001
+
+A: 0.9
+B: 8
+
+log_degree: 4
+
+algo: proposed
+tau_in: True

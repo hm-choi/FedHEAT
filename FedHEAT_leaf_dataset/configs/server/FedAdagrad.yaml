@@ -1,0 +1,15 @@
+## Server ##
+type: ServerAdagrad
+momentum: 0.9
+tau : 0.00001
+
+t1: 140
+
+A: 1e-5
+B: 1e-3
+
+log_degree: 5
+iteration: 1
+
+algo: proposed
+tau_in: True

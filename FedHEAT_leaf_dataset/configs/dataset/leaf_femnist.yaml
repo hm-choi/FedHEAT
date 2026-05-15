@@ -1,0 +1,6 @@
+### dataset ###
+name: 'LEAF_FEMNIST'
+path: './data/leaf_femnist'
+client_path: "./client_data"
+num_instances: 0
+download: False

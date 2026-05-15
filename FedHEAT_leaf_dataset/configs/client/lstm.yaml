@@ -1,0 +1,4 @@
+## Client ##
+type: LSTM_Client
+ce_loss:
+  weight: 1

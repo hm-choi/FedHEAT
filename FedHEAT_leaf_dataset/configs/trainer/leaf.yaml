@@ -1,0 +1,12 @@
+## Trainer ##
+type: Leaf_trainer
+
+# batch_size: 50
+local_lr_decay: 0.998
+local_lr: 0.1
+local_epochs: 5
+global_lr: 0.01
+global_rounds: 1000
+
+encrypted: True
+enc_level: 3

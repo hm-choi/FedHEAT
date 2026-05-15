@@ -1,8 +1,19 @@
-wandb
-*/__pycache__/
-*.pyc
-checkpoints/**
-*/.ipynb_checkpoints/
-__pycache__/
+# Ignore checkpoint directories anywhere under FedHEAT*
+FedHEAT*/checkpoints/
 
-./data/cifar-100-python.tar.gz
+# Ignore data directories
+FedHEAT*/data/
+
+# Ignore output directories
+FedHEAT*/outputs/
+
+# Ignore log
+FedHEAT*/federated_train.log
+
+# Ignore dataset
+FedHEAT_leaf_dataset/leaf_dataset.tar.gz
+FedHEAT_normal_dataset/normal_dataset.tar.gz
+
+# Ignore pycache
+FedHEAT*/**/__pycache__/
+FedHEAT*/**/*.pyc
