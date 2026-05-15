@@ -38,9 +38,33 @@ The experiments for CIFAR-10/100, and Tiny-ImageNet are implemented in the follo
 
 Detailed explanations and how to run the code are provided in the README.md file in each directory.
 
-## 3. License
+## 3. Evaluation results
+We compare the server-side aggregation time (in seconds) of FedHEAT, FedHEAT without MR (Moment Reparameterization, our proposed method), and HE-Adam [2] across five benchmark datasets.
+For a fair comparison across datasets, we measure the aggregation time over 500 rounds for each dataset.
+
+### Table. Server-side aggregation runtime (seconds) across five benchmarks. All values are measured on Server1. Lower is better.
+
+| Setting    | Method             | FEMNIST  | CelebA | CIFAR-10 | CIFAR-100 | Tiny-ImageNet |
+|-------------|--------------------|----------|---------|-----------|-------------|----------------|
+| Ciphertext | HE-Adam            | 14020.47 | 96.99   | 23114.19  | 23372.54    | 23481.53       |
+| Ciphertext | FedHEAT (w/o MR)   | 10755.49 | 82.95   | 17915.45  | 18034.93    | 18108.73       |
+| Ciphertext | **FedHEAT**        | 9171.14  | 73.78   | 14992.82  | 14898.50    | 15055.01       |
+
+We compare the teste accuracy of FedHEAT with FedAdam[4] in the plaintext setting, and FedHEAT with its variant and HE-Adam in the ciphertext setting.
+### Table. Accuracy (%) of FedHEAT variants and HE-Adam across benchmark datasets. Higher is better.
+
+| Setting    | Method             | FEMNIST | CelebA | CIFAR-10 | CIFAR-100 | Tiny-ImageNet |
+|-------------|--------------------|----------|---------|-----------|-------------|----------------|
+| Plaintext  | FedAdam            | 84.85    | 89.07   | 85.52     | 55.73       | 41.54          |
+| Plaintext  | FedHEAT            | 84.91    | 90.84   | 87.86     | 55.16       | 42.05          |
+| Ciphertext | HE-Adam            | 84.82    | 90.70   | 87.46     | 55.23       | 43.09          |
+| Ciphertext | FedHEAT (w/o MR)   | 84.77    | 90.60   | 86.70     | 54.54       | 41.68          |
+| Ciphertext | **FedHEAT**        | 84.79    | 90.91   | 87.66     | 55.26       | 41.80          |
+
+## 4. License
 This is available for non-commercial purposes only.
 
 [1] Geeho Kim, Jinkyu Kim, and Bohyung Han. Communication-efficient federated learning with accelerated client gradient. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 12385–12394, 2024.
 [2] Chi-Hieu Nguyen, Dinh Thai Hoang, Diep N. Nguyen, Kristin Lauter, and Miran Kim. Empowering artificial intelligence with homomorphic encryption for secure deep reinforcement learning. Nature Machine Intelligence, pages 1–14, 2025.
 [3] CryptoLab. HEaaN Library. https://www.cryptolab.co.kr/en/products-en/heaan-he/, 2022. Accessed: 2026-04-24.
+[4] Sashank J. Reddi, Zachary Charles, Manzil Zaheer, Zachary Garrett, Keith Rush, Jakub Koneˇcný, Sanjiv Kumar, and H. Brendan McMahan. Adaptive Federated Optimization. In International Conference on Learning Representations, 2021.
