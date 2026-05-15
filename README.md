@@ -23,7 +23,7 @@ Server1 is equipped with an Intel Xeon w9-3475X CPU, an NVIDIA RTX PRO 6000 Blac
 Server2 is equipped with an Intel Xeon 6521P CPU, an NVIDIA RTX PRO 6000 Blackwell Workstation Edition GPU, and 384GB of RAM.
 - The server used for each experiment is specified in the corresponding experiment description.
 - We use the HEaaN-GPU library[3] with the CKKS scheme. 
-The library is provided as a Docker image via https://hub.docker.com/r/cryptolabinc/heaan-statd, and all experiments were conducted in containers created from the '1.0.0-gpu' tagged image.
+The library is provided by CryptoLab as a Docker image via https://hub.docker.com/r/cryptolabinc/heaan-stat, and all experiments were conducted in containers created from the '1.0.0-gpu' tagged image.
 
 ## 2. Run the codes
 First, install the required Python packages listed in 'requirements.txt':
