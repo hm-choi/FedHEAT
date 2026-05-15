@@ -67,4 +67,4 @@ This is available for non-commercial purposes only.
 [1] Geeho Kim, Jinkyu Kim, and Bohyung Han. Communication-efficient federated learning with accelerated client gradient. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 12385–12394, 2024. \
 [2] Chi-Hieu Nguyen, Dinh Thai Hoang, Diep N. Nguyen, Kristin Lauter, and Miran Kim. Empowering artificial intelligence with homomorphic encryption for secure deep reinforcement learning. Nature Machine Intelligence, pages 1–14, 2025. \
 [3] CryptoLab. HEaaN Library. https://www.cryptolab.co.kr/en/products-en/heaan-he/, 2022. Accessed: 2026-04-24. \
-[4] Sashank J. Reddi, Zachary Charles, Manzil Zaheer, Zachary Garrett, Keith Rush, Jakub Koneˇcný, Sanjiv Kumar, and H. Brendan McMahan. Adaptive Federated Optimization. In International Conference on Learning Representations, 2021. \
+[4] Sashank J. Reddi, Zachary Charles, Manzil Zaheer, Zachary Garrett, Keith Rush, Jakub Koneˇcný, Sanjiv Kumar, and H. Brendan McMahan. Adaptive Federated Optimization. In International Conference on Learning Representations, 2021.
