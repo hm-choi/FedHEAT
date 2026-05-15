@@ -30,7 +30,7 @@ To select a dataset, set the `dataset` argument to one of the following:
 - `femnist`
 - `celeba`
 
-For example, the following command runs the evaluation on FEMNIST:
+For example, the following command runs the evaluation on FEMNIST: \
 **FEMNIST, FedHEAT in encrypted version:**
 ~~~bash
 CUDA_VISIBLE_DEVICES=0 python3 \
