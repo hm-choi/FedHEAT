@@ -53,13 +53,11 @@ def real_to_complex(vec: np.ndarray, N: int):
 
     L = vec.shape[0]
 
-    # 2N 단위로 맞춰야 (real block, imag block) 쌍을 만들 수 있음
     padded_len = ((L + 2 * N - 1) // (2 * N)) * (2 * N)
 
     if padded_len > L:
         vec = np.pad(vec, (0, padded_len - L), mode='constant')
 
-    # (num_blocks, N) 형태로 자르기
     blocks = vec.reshape(-1, N)
 
     complex_blocks = []
@@ -317,7 +315,6 @@ def next_power_of_two_sqrt(x: int) -> int:
     bitlen = x.bit_length() - 1  # floor(log2(x))
     k = (bitlen + 1) // 2        # ceil(bitlen / 2)
 
-    # 보정: 2^(2k) < x 인 경우 한 단계 올림
     if (1 << (2 * k)) < x:
         k += 1
 
@@ -503,7 +500,7 @@ def rewrite_blocks_to_channels(
     out: Dict[str, List[int]] = {}
     for monom in channel_order(B, N):   # T0-first order
         vec = collected.get(monom, [0] * B)
-        if include_zeros or any(v != 0 for v in vec):   # <- 조건 변경
+        if include_zeros or any(v != 0 for v in vec):
             out[monom_to_label(monom)] = vec
 
     return out
