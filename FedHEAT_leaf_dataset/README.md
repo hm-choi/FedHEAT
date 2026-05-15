@@ -1,7 +1,7 @@
 # Experimental Evaluation for FEMNIST and CelebA
 
 This directory contains the experimental code for the FEMNIST and CelebA datasets.  
-All datasets are generated and preprocessed using the LEAF federated learning benchmark library[5](https://github.com/TalwalkarLab/leaf).
+All datasets are generated and preprocessed using the LEAF[5] federated learning benchmark library(https://github.com/TalwalkarLab/leaf).
 
 ## Dataset
 
